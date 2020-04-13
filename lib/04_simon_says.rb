@@ -19,5 +19,7 @@ def first_word(string3)
 end
 
 def titleize(string4)
-    string4.split.each do |i| i.capitalize! end.join(' ')
+    string4 = string4.split(' ')
+    string4[0].capitalize!
+    string4.each{|i| i.size > 3 ? i.capitalize! : i }.join(' ')
 end
