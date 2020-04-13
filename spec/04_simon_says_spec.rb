@@ -21,6 +21,7 @@ describe "Simon says" do
     end
   end
 
+
   describe "repeat" do
     it "should repeat" do
       expect(repeat("hello")).to eq("hello hello")
@@ -35,6 +36,7 @@ describe "Simon says" do
     end
   end
 
+  
   describe "start_of_word" do
     it "returns the first letter" do
       expect(start_of_word("hello", 1)).to eq("h")
